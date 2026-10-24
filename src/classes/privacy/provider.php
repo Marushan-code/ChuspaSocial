@@ -21,7 +21,9 @@ use core_tag_tag;
  * @package    local_chuspasocial
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class provider implements \core_privacy\local\metadata\null_provider {
+class provider implements
+        \core_privacy\local\metadata\null_provider,
+        \core_privacy\local\request\core_userlist_provider {
 
     /**
      * Returns the reason why this plugin does not store personal data.
